@@ -84,6 +84,8 @@ export async function buyTokenRandom(skcrypted: string, token: string) {
         if (transactionMode == TransactionMode.Execution) {
             console.log('> Initiating buy token random...')
             // const signature = await sendTransactionWrapper(transaction, [payer])
+
+            // REMOVE THE AWAIT HERE IF YOU DONT WANT TO WAIT THE CONFIRMATION
             const signature = await sendAndConfirmTransactionWrapper(connection, transaction, [payer])
             console.log('> Buy transaction confirmed:', signature)
         }
