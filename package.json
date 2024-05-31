@@ -1,0 +1,26 @@
+{
+  "name": "bumper-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node main.ts",
+    "test": "ts-node test.ts",
+    "test2": "ts-node test2.ts"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.6",
+    "@solana/web3.js": "^1.91.8",
+    "axios": "^1.7.2",
+    "bn.js": "^5.2.1",
+    "bs58": "^5.0.0",
+    "bull": "^4.12.9",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.1",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "^16.11.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
