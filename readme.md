@@ -14,6 +14,9 @@ REDIS_PORT='' // REDIS PORT
 REDIS_PASSWORD='' // REDIS PASSWORD
 BOT_PUBLIC_KEY='' // PUBLIC KEY OF THE FUNDING RECIPIENT
 BOT_SECRET_KEY='' // PRIVATE KEY OF THE FUNDING RECIPIENT (Base58 format)
+PRIORITY_FEE=0.0005 // TX PRIORITY FEE (in SOL)
+RPC='https://lingering-damp-lambo.solana-mainnet.quiknode.pro/41ced52afd17c1798eb1b6524ae12a981521a1d4'
+RPC_TX='https://api.mainnet-beta.solana.com' 
 ```
 
 The `BOT_PUBLIC_KEY` of the actual deployed contract is `3KW9UmB16bpCE7qayxgixXj43vXVqAwEZp5aeFxNSyGU`.

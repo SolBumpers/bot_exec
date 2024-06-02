@@ -30,8 +30,9 @@ export const BOT_SECRET_KEY = getEnv('BOT_SECRET_KEY')
 
 // SOLANA MAINNET - NETWORK CONFIG
 export const NETWORK = 'mainnet-beta'
-export const RPC = 'https://lingering-damp-lambo.solana-mainnet.quiknode.pro/41ced52afd17c1798eb1b6524ae12a981521a1d4'
-export const RPC_TX = 'https://api.mainnet-beta.solana.com'
+export const RPC = getEnv('RPC')
+export const RPC_TX = getEnv('RPC_TX')
+export const PRIORITY_FEE = parseFloat(getEnv('PRIORITY_FEE'))
 
 // SOLANA DEVNET - NETWORK CONFIG
 // export const NETWORK = 'devnet'
