@@ -90,8 +90,8 @@ export async function sellTokenRandom(skcrypted: string, token: string) {
             //const signature = await sendTransactionWrapper(transaction, [payer])
 
             // REMOVE THE AWAIT HERE IF YOU DONT WANT TO WAIT THE CONFIRMATION
-            // const signature = sendAndConfirmTransactionWrapper(connection, transaction, [payer])
-            const signature = await sendAndConfirmTransactionWrapper(connection, transaction, [payer])
+            // const signature = await sendAndConfirmTransactionWrapper(connection, transaction, [payer])
+            const signature = sendAndConfirmTransactionWrapper(connection, transaction, [payer])
             console.log('> Sell transaction confirmed:', signature)
         }
         else if (transactionMode == TransactionMode.Simulation) {
